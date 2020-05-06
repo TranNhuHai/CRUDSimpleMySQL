@@ -1,0 +1,13 @@
+h1 Users
+a(href="/create") Create
+
+a(href="/update") Update
+
+a(href="/delete") Delete
+form(action="/user", method="GET")
+    label ID
+    input(name="id", type="text")
+    button view
+ul
+ each val, key in user
+    li= key + ': ' + val
